@@ -1,0 +1,5 @@
+signedgraph
+*.o
+*.exe
+*.dot
+*.ps

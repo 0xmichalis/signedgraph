@@ -1,0 +1,14 @@
+language: c
+
+compiler:
+- clang
+- gcc
+
+install:
+- sudo apt-get update
+- sudo apt-get install valgrind -y
+
+script: 
+- make test && ./signedgraph
+- make viz && make
+- valgrind --tool=memcheck --error-exitcode=1 ./signedgraph 1000
