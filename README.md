@@ -4,7 +4,7 @@ Development of signed graph balance checking algorithms is the main subject of t
 ### Install
 For a simple installation, run:
 
-	$ git clone https://github.com/ie-teicrete/signedgraph
+	$ git clone https://github.com/kargakis/signedgraph
 	$ cd signedgraph
 	$ make 
 
@@ -38,6 +38,3 @@ Testing of the algorithms can be done with the execution of the following comman
 	
 ### History
 Signed graphs were first introduced by [Frank Harary](http://en.wikipedia.org/wiki/Frank_Harary) to handle a problem in social psychology (Cartwright and Harary, 1956). They have been rediscovered many times because they come up naturally in many unrelated areas. For instance, they enable one to describe and analyze the geometry of subsets of the classical root systems. They appear in topological graph theory and group theory. They are a natural context for questions about odd and even cycles in graphs. They appear in computing the ground state energy in the non-ferromagnetic Ising model; for this one needs to find a largest balanced edge set in Σ. They have been applied to data classification in correlation clustering.
-
-### License
-[Unlicense](http://unlicense.org/)
