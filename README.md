@@ -8,7 +8,7 @@ For a simple installation, run:
 	$ cd signedgraph
 	$ make 
 
-For more interesting results though, it is advised to have all the [prerequisites](https://github.com/ie-teicrete/signedgraph#prerequisites-for-graph-visualization) and run the following version of ```make```:
+For more interesting results though, it is advised to have all the [prerequisites](https://github.com/kargakis/signedgraph#prerequisites-for-graph-visualization) and run the following version of ```make```:
 
 	$ make viz
 
@@ -18,17 +18,17 @@ For more interesting results though, it is advised to have all the [prerequisite
 
 Although, theoretically, our algorithms are graph-size agnostic, meaning they can work on any size of graph, we are constraining the size of our generated graphs from three (smallest closed graph there can be) up to 18k nodes due to memory limitations some computers may have. Below there is an 1k-vertices graph.
 
-![](https://raw.githubusercontent.com/ie-teicrete/signedgraph/master/img/1k-nodes.png)
+![](https://raw.githubusercontent.com/kargakis/signedgraph/master/img/1k-nodes.png)
 
 ### Prerequisites for graph visualization
 * [Graphviz](http://www.graphviz.org/)
 * [Evince](https://wiki.gnome.org/Apps/Evince) (or your favorite document viewer)
 * ```make viz```
 
-Evince was chosen amongst a wide variety of document viewers (Adobe Reader, Foxit, Nitro, et al) because it is open-source and more lightweight than the rest but if you want to use a different viewer just replace [evince](https://github.com/ie-teicrete/signedgraph/blob/b81b9259d202949bc30d69bf0bfa4db9cbd1d8b7/src/main.c#L170) with the command that runs the viewer of your choice before building the source.
+Evince was chosen amongst a wide variety of document viewers (Adobe Reader, Foxit, Nitro, et al) because it is open-source and more lightweight than the rest but if you want to use a different viewer just replace [evince](https://github.com/kargakis/signedgraph/blob/b81b9259d202949bc30d69bf0bfa4db9cbd1d8b7/src/main.c#L170) with the command that runs the viewer of your choice before building the source.
 By using Graphviz and the DOT language, we can visualize our graphs like the following graph, which represents our ```balancedGraph``` used for testing. Windows users need to set up their ```PATH``` to point to the ```neato``` and ```evince``` executables.
 
-![](https://raw.githubusercontent.com/ie-teicrete/signedgraph/master/img/example.png)
+![](https://raw.githubusercontent.com/kargakis/signedgraph/master/img/example.png)
 
 ### Testing
 Testing of the algorithms can be done with the execution of the following commands:
