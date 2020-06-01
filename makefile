@@ -15,7 +15,7 @@ all: default clean
 default: main.o algorithms.o
 	$(CC) -o $(TARGET_NAME) main.o algorithms.o -Wall -Wextra
 
-viz: vizmode.o algorithms.o viz.o
+dot: vizmode.o algorithms.o viz.o
 	$(CC) -o $(TARGET_NAME) main.o algorithms.o viz.o -Wall -Wextra
 	$(CLEANUP)
 

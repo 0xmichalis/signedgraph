@@ -45,10 +45,4 @@ void vizGraph(EDGE** mat, int nodes){
 	}
 	fprintf(pFile, "\n}");
 	fclose(pFile);
-	// neato is a program that makes layouts of undirected graphs following the
-	// filter model of DOT language.Its layout heuristic creates virtual physical
-	// models and runs an iterative solver to find low energy configurations.
-	// More information in the following link: http://graphviz.org/pdf/neatoguide.pdf
-	system("neato -Tps graph.dot -o graph.ps");
-	system("evince graph.ps");
 }
